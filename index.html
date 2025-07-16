@@ -1,30 +1,27 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
         </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
+<style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+<style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" rel="stylesheet"/>
+<meta content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<style>
                 #map_1c3065a4808081570a1c0e57a4a45145 {
                     position: relative;
                     width: 100.0%;
@@ -33,28 +30,29 @@
                     top: 0.0%;
                 }
             </style>
-        
-</head>
+<style>
+.leaflet-control-attribution a {
+    pointer-events: none;
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+</style></head>
 <body>
-    
-    
- <div style="position: fixed; 
+<div style="position: fixed; 
  bottom: 50px; left: 50px; width: 250px; height: 230px; 
  border:2px solid grey; z-index:9999; font-size:14px;
  background-color:white; padding: 10px;">
- <b>Legend - Property Status</b><br>
- <i style="background:red;color:red">....</i> Overhead - No Work Started<br>
- <i style="background:orange;color:orange">....</i> Overhead - Not Released<br>
- <i style="background:yellow;color:yellow">....</i> Overhead - Released<br>
- <i style="background:green;color:green">....</i> Overhead - Converted ; Existing Underground<br>
- <i style="background:blue;color:blue">....</i> City to Convert<br>
- <i style="background:grey;color:grey">....</i> Need Phone/Cable Only ; Phone/Cable Conduits Installed<br>
- <i style="background:black;color:black">....</i> Stubbed for New Construction
+<b>Legend - Property Status</b><br/>
+<i style="background:red;color:red">....</i> Overhead - No Work Started<br/>
+<i style="background:orange;color:orange">....</i> Overhead - Not Released<br/>
+<i style="background:yellow;color:yellow">....</i> Overhead - Released<br/>
+<i style="background:green;color:green">....</i> Overhead - Converted ; Existing Underground<br/>
+<i style="background:blue;color:blue">....</i> City to Convert<br/>
+<i style="background:grey;color:grey">....</i> Need Phone/Cable Only ; Phone/Cable Conduits Installed<br/>
+<i style="background:black;color:black">....</i> Stubbed for New Construction
  </div>
- 
-    
-            <div class="folium-map" id="map_1c3065a4808081570a1c0e57a4a45145" ></div>
-        
+<div class="folium-map" id="map_1c3065a4808081570a1c0e57a4a45145"></div>
 </body>
 <script>
     
